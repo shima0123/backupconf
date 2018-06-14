@@ -1,0 +1,41 @@
+let mapleader="m"
+nmap <leader>v "+gp  
+vnoremap <leader>c "+y
+
+nnoremap <leader>w :w
+nnoremap <leader>q :q
+inoremap jj <esc>
+
+inoremap <c-a> <Home>
+inoremap <c-e> <End>
+inoremap <c-q> <PageUp>
+inoremap <c-z> <PageDown>
+inoremap <c-k> <up>
+inoremap <c-j> <down>
+inoremap <c-l> <right>
+inoremap <c-h> <left>
+
+vnoremap q <esc>
+
+nmap <tab> V>
+nmap <s-tab> V<
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+set number "显示行号
+set scrolloff=2
+set mouse=a
+set hlsearch
+syntax on
+
+
+au BufNewFile,BufRead *.py
+\ set tabstop=4   "tab宽度
+\ set softtabstop=4 
+\ set shiftwidth=4  
+\ set textwidth=79  "行最大宽度
+\ set expandtab       "tab替换为空格键
+\ set autoindent      "自动缩进
+\ set fileformat=unix   "保存文件格式
+
+
